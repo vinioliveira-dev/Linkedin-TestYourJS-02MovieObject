@@ -7,7 +7,7 @@ function Movie(title, director, genre, releaseYear, rating) {
 }
 
 Movie.prototype.getOverview = function() {
-    return `${this.title}, a ${this.genre} film directed by ${this.director} was released in ${this.releaseYear}. It received a rating of ${rating}.`;
+    return `${this.title}, a ${this.genre} film directed by ${this.director} was released in ${this.releaseYear}. It received a rating of ${this.rating}.`;
 }
 
 const fastAndFurious = new Movie(
@@ -18,4 +18,4 @@ const fastAndFurious = new Movie(
     '10/10'
 );
 
-fastAndFurious.getOverview();
+console.log(fastAndFurious.getOverview());
